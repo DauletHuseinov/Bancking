@@ -1,0 +1,7 @@
+{% for client in clients %}
+
+<strong> <p> <a href="{% url 'detail' client.id %}">ФИО Клиента: {{client.name}} - {{client.birth_year}}</a> </p> </strong>
+
+
+
+{% endfor %}
